@@ -1,0 +1,165 @@
+.table {
+    background: linear-gradient(45deg, var(--reo-dark3), var(--reo-dark4), var(--reo-dark3));
+    border-radius: 8px;
+    border: var(--border);
+
+    td,
+    tr,
+    th {
+        color: var(--graylight) !important;
+        font-size: 16px;
+    }
+
+    th {
+        font-weight: bold;
+        color: var(--lighter4) !important;
+        border-left: var(--border);
+
+    }
+
+    tr:not(thead tr):hover {
+        cursor: pointer;
+        background-color: var(--reo4);
+    }
+
+    .table_actions {
+
+        .table_dropdown_menu_actions {
+            position: relative;
+            display: none;
+
+
+            .actions_menu_icon {
+                color: rgb(194, 194, 194);
+                line-height: 0;
+                border: var(--border2);
+                background: none;
+                border-radius: 4px;
+                cursor: pointer;
+                transition: all 0.2s ease;
+            }
+
+            .menu_list_miu {
+                width: 100px;
+                position: absolute;
+                height: 100px;
+                top: 100%;
+                right: 50%;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 100;
+                background-color: var(--reo-dark7);
+                border: var(--border2);
+                border-radius: 8px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 2px;
+                padding: 0 2px;
+                display: none;
+
+                .menu_list {
+                    background: none;
+                    border: none;
+                    padding: 6.5px 4px;
+                    border: var(--border2);
+                    cursor: pointer;
+                    color: var(--graylight);
+                    border-radius: 4px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 5px;
+
+                    &:hover {
+                        background-color: var(--reo3);
+                    }
+
+                    &:active {
+                        background-color: var(--reo2);
+                    }
+
+                    span {
+                        line-height: 0;
+
+                        .MuiSvgIcon-root {
+                            font-size: 12px;
+                        }
+                    }
+
+
+
+                }
+            }
+
+
+            &:hover {
+
+
+                .menu_list_miu {
+                    display: flex;
+                }
+            }
+
+
+        }
+
+        .tbtn {
+            border: none;
+            margin-left: 10px;
+            padding: 4px 7px;
+            cursor: pointer;
+            border-radius: 6px;
+        }
+
+
+        .tbtn:active {
+            background-color: var(--reo4);
+
+        }
+
+        .editbtn {
+            background: rgba(54, 197, 245, 0.322);
+            border: 1px solid var(--coloro);
+            color: var(--coloro);
+            background-color: var(--reo-dark7);
+        }
+
+        .deletebtn {
+            background: rgba(54, 197, 245, 0.322);
+            border: 1px solid var(--colorr);
+            color: var(--colorr);
+            background-color: var(--reo-dark7);
+        }
+
+        .viewbtn {
+            background: rgba(54, 197, 245, 0.322);
+            border: 1px solid var(--colorb);
+            color: var(--colorb);
+            background-color: var(--reo-dark7);
+            display: none;
+        }
+
+
+
+        @media(max-width:1290px) {
+            .viewbtn {
+                display: inline;
+            }
+
+        }
+
+        @media(max-width:870px) {
+            .tbtn {
+                display: none;
+            }
+
+            .table_dropdown_menu_actions {
+                display: inline;
+            }
+        }
+
+    }
+}
+
+@media(max-width:870px) {}

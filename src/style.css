@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Prompt:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;700;900&family=Rubik+Doodle+Shadow&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Poppins;
+  background-color: var(--reo-dark);
+  color: rgb(224, 224, 224);
+  overflow: hidden;
+}
+
+:root {
+  --maincolor1: #211951;
+  --maincolor2: #150f31;
+  --maincolor3: #453f78;
+  --maincolor4: #333a73;
+  --maincolor-dark: #070f2b;
+  --maincolor-dark2: #211951;
+  --lighter: #836fff;
+  --lighter2: #836fff;
+  --lighter3: #8276c9;
+  --lighter4: #b0a4f8;
+  --graylight: #f0f3ff;
+
+  --reo-dark: #191a23;
+  --reo-dark2: #1d1e2a;
+  --reo-dark3: #212130;
+  --reo-dark4: #262537;
+  --reo-dark5: #1d1e29;
+  --reo-dark6: #232133;
+  --reo-dark7: #27282e;
+
+  --colorg: #15f5ba;
+  --colorg2: #26cf80;
+  --colorb: #2e90fa;
+  --colorv: #6172f3;
+  --colorr: rgb(207, 60, 89);
+  --coloro: orange;
+
+  --reo1: #4b4673;
+  --reo2: #8276c9;
+  --reo3: #4b4673;
+  --reo4: #32304b;
+  --reo5: #afa7dc;
+
+  --border: 1px solid #4b46733b;
+  --border2: 1px solid #4b46739f;
+}
